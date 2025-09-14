@@ -1,6 +1,9 @@
 import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+import { makePublicRouterInstance } from '../node_modules/next/dist/esm/client/router';
 
 const isPublicRoute = createRouteMatcher([
+  '/',
+  
   '/sign-in(.*)',
   '/sign-up(.*)'
 ])
