@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Header from "./_components/Header";
+import Hero from "./_components/Hero";
 
 export default function Home() {
   return (
     <>
-    <h1>Hello World</h1>
-    <p>hello</p>
-    <Button>
-Hello</Button>
-   </>
+    <Header/>
+    <Hero/>
+
+
+
+    </>
       
   );
 }
